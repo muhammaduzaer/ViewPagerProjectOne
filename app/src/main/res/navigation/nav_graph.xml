@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.muhammaduzaer.viewpager2.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_sliderSampleOneFragment"
+            app:destination="@id/sliderSampleOneFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sliderSampleTwoFragment"
+            app:destination="@id/sliderSampleTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sliderSampleOneFragment"
+        android:name="com.muhammaduzaer.viewpager2.fragments.SliderSampleOneFragment"
+        android:label="fragment_slider_sample_one"
+        tools:layout="@layout/fragment_slider_sample_one" />
+    <fragment
+        android:id="@+id/sliderSampleTwoFragment"
+        android:name="com.muhammaduzaer.viewpager2.fragments.SliderSampleTwoFragment"
+        android:label="fragment_slider_sample_two"
+        tools:layout="@layout/fragment_slider_sample_two" />
+</navigation>

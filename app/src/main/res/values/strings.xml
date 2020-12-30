@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">ViewPager2</string>
     <string name="view_pager_images">View Pager Images</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_sliders_with_viewpager2">Image Sliders With ViewPager2</string>
+    <string name="slider_four">Slider Four</string>
+    <string name="slider_three">Slider Three</string>
+    <string name="slider_two">Slider Two</string>
+    <string name="slider_one">Slider One</string>
 </resources>

@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.view_pager_item.view.*
 class ViewPagerAdapter(
     private val images: List<Int>
 ) : RecyclerView.Adapter<ViewPagerAdapter.ViewPagerViewHolder>() {
+
     inner class ViewPagerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewPagerViewHolder {
