@@ -22,5 +22,12 @@
         android:text="@string/slider_two"
         />
 
+    <Button
+        android:id="@+id/buttonExampleThree"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/slider_three"
+        />
+
 
 </LinearLayout>

@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_homeFragment_to_sliderSampleTwoFragment"
             app:destination="@id/sliderSampleTwoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sliderSampleThreeFragment"
+            app:destination="@id/sliderSampleThreeFragment" />
     </fragment>
     <fragment
         android:id="@+id/sliderSampleOneFragment"
@@ -27,4 +30,9 @@
         android:name="com.muhammaduzaer.viewpager2.fragments.SliderSampleTwoFragment"
         android:label="fragment_slider_sample_two"
         tools:layout="@layout/fragment_slider_sample_two" />
+    <fragment
+        android:id="@+id/sliderSampleThreeFragment"
+        android:name="com.muhammaduzaer.viewpager2.fragments.SliderSampleThreeFragment"
+        android:label="fragment_slider_sample_three"
+        tools:layout="@layout/fragment_slider_sample_three" />
 </navigation>

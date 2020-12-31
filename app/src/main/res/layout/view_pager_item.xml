@@ -11,8 +11,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/viewpager_background"
-        android:scaleType="centerCrop"
         android:contentDescription="@string/view_pager_images" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

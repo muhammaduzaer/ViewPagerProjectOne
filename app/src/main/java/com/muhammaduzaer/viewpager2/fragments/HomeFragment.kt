@@ -32,6 +32,10 @@ class HomeFragment : Fragment() {
         buttonExampleTwo.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_sliderSampleTwoFragment)
         }
+
+        buttonExampleThree.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_sliderSampleThreeFragment)
+        }
     }
 
 }

@@ -34,13 +34,21 @@ class SliderSampleTwoFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        slider()
+    }
+
+    private fun slider() {
+
+        val sliderRunnable = Runnable {
+            viewPagerExampleTwo.currentItem = viewPagerExampleTwo.currentItem + 1
+        }
 
         val sliderItems: MutableList<SliderItem> = ArrayList()
-        sliderItems.add(SliderItem(R.drawable.image_one))
-        sliderItems.add(SliderItem(R.drawable.image_two))
-        sliderItems.add(SliderItem(R.drawable.image_three))
-        sliderItems.add(SliderItem(R.drawable.image_four))
-        sliderItems.add(SliderItem(R.drawable.image_five))
+        sliderItems.add(SliderItem(R.drawable.helpers_ad_one))
+        sliderItems.add(SliderItem(R.drawable.helpers_ad_two))
+        sliderItems.add(SliderItem(R.drawable.helpers_ad_three))
+//        sliderItems.add(SliderItem(R.drawable.image_four))
+//        sliderItems.add(SliderItem(R.drawable.image_five))
 
         viewPagerExampleTwo.adapter = ViewPagerAdapterExampleTwo(sliderItems, viewPagerExampleTwo)
 
@@ -65,10 +73,7 @@ class SliderSampleTwoFragment : Fragment() {
                 sliderHandler.postDelayed(sliderRunnable, 3000)
             }
         })
-    }
 
-    private val sliderRunnable = Runnable {
-        viewPagerExampleTwo.currentItem = viewPagerExampleTwo.currentItem + 1
     }
 
 }
